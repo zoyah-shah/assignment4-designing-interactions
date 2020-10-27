@@ -1,0 +1,318 @@
+body{
+	/* position: absolute; */
+	margin: 0;
+	background-color: #f7f7f7;
+}
+
+
+.title{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	/* color: #F13C20; */
+	color: #FF4E00;
+	/* text-shadow: 2px 2px 1px #4056A1; */
+	animation: color;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+}
+
+@keyframes color {
+  0% {
+    color: #FF4E00;
+  }
+	50%{
+		color: #F5BB00;
+	}
+  100% {
+    color: #8EA604;
+  }
+}
+
+.description{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	/* color: #4056A1; */
+	color: #8EA604;
+	width: 500px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* left most */
+.box1{
+	position: absolute;
+	top: 300px;
+	width: 40vw;
+	height: 640px;
+	/* background-color: #4056A1; */
+	background-color: #8EA604;
+}
+
+.box1:hover{
+	position: absolute;
+	z-index: 99;
+}
+
+#how{
+	position: relative;
+	text-align: center;
+	/* background-color: white; */
+	top: -50px;
+	/* width: 280px; */
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	/* color: #D79922 */
+	color: #F5BB00;
+	animation: appear;
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+.instructions{
+	position: relative;
+	left: 20px;
+	width: 600px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	/* color: #D79922; */
+	color: #F5BB00;
+}
+
+/* right most */
+.box2{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48vw;
+	height: 100vh;
+	/* background-color: #F13C20; */
+	background-color: #FF4E00;
+}
+
+.box2:hover{
+	position: absolute;
+	z-index: 99;
+}
+
+#set-up{
+	position: relative;
+	text-align: center;
+	top: -50px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+	/* color: #D79922; */
+	color: #F5BB00;
+	animation: appear;
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+.pics{
+	position: relative;
+	left: 20px;
+	width: 740px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	/* color: #D79922; */
+	color: #F5BB00;
+}
+
+img{
+	position: relative;
+	width: 500px;
+}
+
+/* middle */
+.box3{
+	position: relative;
+	top: 400px;
+	left: calc(50% - 40vh);
+	/* right: 500px; */
+	width: 40vw;
+	height: 540px;
+	/* background-color: #D79922; */
+	background-color: #F5BB00;
+}
+
+#game{
+	text-align: center;
+	top: -50px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	color: #FF4E00;
+	animation: appear;
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#yellow{
+	color: #F5BB00;
+}
+
+#done{
+	position: relative;
+	left: calc(20vw - 50%);
+	text-align: center;
+	top: -20px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	body{
+		background-color: #F5BB00;
+	}
+
+	.description{
+		left: 150px;
+		width: 300px;
+	}
+
+	.instructions{
+		position: relative;
+		top: -90px;
+		left: 20px;
+		width: 300px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		/* color: #D79922; */
+		color: #F5BB00;
+	}
+
+	.pics{
+		position: relative;
+		top: -50px;
+		left: 20px;
+		width: 400px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		/* color: #D79922; */
+		color: #F5BB00;
+	}
+
+	img{
+		position: relative;
+		width: 300px;
+	}
+
+	#done{
+		position: relative;
+		left: calc(16vw - 50%);
+		text-align: center;
+		top: -20px;
+	}
+
+  .box1{
+		background-color: #FF4E00;
+	}
+
+	.box2{
+		background-color: #8EA604;
+	}
+
+	.box3{
+		background-color: #f7f7f7;
+		left: 250px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.title{
+		position: absolute;
+		top: 10px;
+		left: 30px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		font-size: 50px;
+		/* color: #F13C20; */
+		color: #FF4E00;
+		/* text-shadow: 2px 2px 1px #4056A1; */
+	}
+
+	.description{
+		position: absolute;
+		top: 100px;
+		left: 30px;
+		font-weight: 400;
+		/* color: #4056A1; */
+		color: #8EA604;
+		width: 400px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+  .box1{
+		width: 100vw;
+		top: 200px;
+		background-color: #FF4E00;
+	}
+
+	.instructions{
+		width: 500px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		/* color: #D79922; */
+		color: #F5BB00;
+	}
+
+	.box2{
+		top: 300px;
+		background-color: #8EA604;
+		width: 100vw;
+		height: 500px;
+
+	}
+
+	.pics{
+		position: relative;
+		top: -85px;
+		left: 20px;
+		width: 740px;
+		font-size: 16px;
+
+	}
+
+	.box3{
+		width: 100vw;
+		left: 0px;
+		top: 430px;
+	}
+
+	#done{
+		position: relative;
+		left: 90px;
+		/* left: calc(40vw - 50%); */
+		text-align: center;
+		top: -20px;
+	}
+}
